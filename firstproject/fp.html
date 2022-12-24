@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    
+    <style>
+          body{
+            display:block;
+          }
+          form{
+             background-color: blueviolet;
+             text-align: center;
+          }
+          body{
+            background-image: url('https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+          }
+          h1{
+            text-align:center;
+            color:orange;
+          }
+    </style>
+</head>
+<body>
+    
+    <h1 id="heading">Submit the Form</h1>
+    <form action="#" onsubmit="onsubmition(event)">
+        <label>Name:</label><br>
+        <input type="text" id="name" name="fname" value="Enter your First Name" required></input> <br>
+        <label>Email:</label><br>
+        <input type="email" name="email" value="Enter your Email"required></input><br>
+        <label>Phone:</label><br>
+             <select>
+                <option value="+91">+91</option>
+                <option value="+91">+44</option>
+                <option value="+91">+555</option>
+             </select> 
+        <input type="number" name="pno" id="pno" min="10" max="10"></input><br>
+        <label>Time for Call:</label><br>
+        <input type="date" name="pno"  required></input>
+        <input type="password" name="pno" id="pw"  required></input><br>
+        <input type="time" name="pno" value="Enter your Phone Number" min="10" max="10" required></input><br><br>
+        
+        <button>Submit</button> 
+        <ul class="items">
+          <li>First li</li>
+          <li>Second li</li>
+          <li>Third li</li>
+        </ul>
+    </form>
+    <script>
+        function onsubmition(event){
+            event.preventdefault();
+        }
+    </script>
+</body>
+</html>
