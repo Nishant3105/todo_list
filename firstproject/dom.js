@@ -52,12 +52,40 @@ console.log(headerTitle)
 //  var titles=document.querySelectorAll('.title')
 //  titles[0].textContent='hello'
 
-var odd=document.querySelectorAll('li:nth-child(odd)')
-var even=document.querySelectorAll('li:nth-child(even)')
+// var odd=document.querySelectorAll('li:nth-child(odd)')
+// var even=document.querySelectorAll('li:nth-child(even)')
 
 
-for(var i=0;i<odd.length;i++){
-    odd[i].style.backgroundColor="#f4f4f4"
-    even[i].style.backgroundColor="#ccc"
+// for(var i=0;i<odd.length;i++){
+//     odd[i].style.backgroundColor="#f4f4f4"
+//     even[i].style.backgroundColor="#ccc"
+// }
+
+// queryselector&queryselectorAll task
+// var secondItem=document.querySelector('.list-group-item:nth-child(2)')
+// secondItem.style.backgroundColor='green'
+
+// var thirdItem=document.querySelector('.list-group-item:nth-child(3)')
+// thirdItem.style.visibility='hidden'
+
+var parentElement=document.querySelector('.list-group-item').parentElement
+console.log(parentElement)
+
+//nextElementSibling
+let current = document.querySelector('.list-group-item');
+let nextSibling = current.nextElementSibling;
+
+while(nextSibling) {
+    console.log(nextSibling);
+    nextSibling = nextSibling.nextElementSibling;
 }
+
+let current1 = document.querySelector('.list-group-item1')
+let prevSibling = current1.previousElementSibling
+
+while(prevSibling){
+    console.log(prevSibling)
+    prevSibling=current1.previousElementSibling
+}
+
 
