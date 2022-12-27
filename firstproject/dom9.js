@@ -29,28 +29,24 @@ function addItem(e){
 
   // Create del button element
   var deleteBtn = document.createElement('button');
+  var editBtn=document.createElement('button')
 
   // Add classes to del button
   deleteBtn.className = 'btn btn-danger btn-sm float-right delete';
+  editBtn.className = 'btn btn-success btn-sm float-right edit'
 
   // Append text node
   deleteBtn.appendChild(document.createTextNode('X'));
+  editBtn.appendChild(document.createTextNode('edit'))
 
   // Append button to li
   li.appendChild(deleteBtn);
+  li.appendChild(editBtn)
 
   // Append li to list
   itemList.appendChild(li);
-
-  var editBtn=document.createElement('button')
-
-  editBtn.className = 'btn btn-success btn-sm float-right edit'
-
-  editBtn.appendChild(document.createTextNode('edit'))
-
-  li.appendChild(editBtn)
-
   itemList.appendChild(li)
+
 }
 
 // Remove item
@@ -72,11 +68,12 @@ function filterItems(e){
   // Convert to an array
   Array.from(items).forEach(function(item){
     var itemName = item.firstChild.textContent;
-    if(itemName.toLowerCase().indexOf(text) != -1){
+    var itemName2 = item.childNodes[1].textContent;
+    if(itemName.toLowerCase().indexOf(text) != -1 || itemName2.toLowerCase().indexOf(text) != -1){
       item.style.display = 'block';
     } else {
       item.style.display = 'none';
     }
   });
-}
+} 
 
