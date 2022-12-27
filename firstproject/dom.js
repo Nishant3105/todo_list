@@ -72,20 +72,76 @@ var parentElement=document.querySelector('.list-group-item').parentElement
 console.log(parentElement)
 
 //nextElementSibling
-let current = document.querySelector('.list-group-item');
-let nextSibling = current.nextElementSibling;
+// let current = document.querySelector('.list-group-item');
+// let nextSibling = current.nextElementSibling;
 
-while(nextSibling) {
-    console.log(nextSibling);
-    nextSibling = nextSibling.nextElementSibling;
-}
+// while(nextSibling) {
+//     console.log(nextSibling);
+//     nextSibling = nextSibling.nextElementSibling;
+// }
 
-let current1 = document.querySelector('.list-group-item1')
-let prevSibling = current1.previousElementSibling
+// let current1 = document.querySelector('.list-group-item1')
+// let prevSibling = current1.previousElementSibling
 
-while(prevSibling){
-    console.log(prevSibling)
-    prevSibling=current1.previousElementSibling
-}
+// while(prevSibling){
+//     console.log(prevSibling)
+//     prevSibling=current1.previousElementSibling
+// }
 
+//Traversing the DOM
+//parentNode
+var itemList=document.querySelector('#items')
+//console.log(itemList.parentNode)
+//itemList.parentNode.style.backgroundColor='#f4f4f4'
+//console.log(itemList.parentNode.parentNode)
 
+//parentNode and parentElement for the most pats can be interchangable.
+
+//childNodes
+//console.log(itemList.childNodes)
+//childNodes mei line breaks ko text k thru dikhaya jaata hai isliye recommended nahi hai
+
+ //children
+//  console.log(itemList.children)
+//  console.log(itemList.children[1])
+//  itemList.children[1].style.backgroundColor='yellow'
+
+//firstChild bhi text ko count karta hai isliye recommended nahi hai
+
+//firstElementChild
+// console.log(itemList.firstElementChild)
+// itemList.firstElementChild.textContent='Hello 1'
+
+//similarly lastChild aur lastElementChild(rec.) hai
+
+//similary nextSibling aur nextElementSibling(rec.)
+
+//similarly previousSibling aur previousSibling(rec.)
+
+//Create a div
+var newDiv=document.createElement('div')
+
+//add class
+newDiv.className='hello';
+
+//add id
+newDiv.id='hello1'
+
+//Add attribute
+newDiv.setAttribute('title','Hello Div')
+
+//Create text node
+var newDivText=document.createTextNode('Hello World');
+
+// //Add text to div
+// newDiv.appendChild(newDivText)
+
+// //Add div to HTML just below div=container
+// var container=document.querySelector('header .container')
+// var h1=document.querySelector('header h1')
+
+// newDiv.style.fontSize='30px'
+
+// container.insertBefore(newDiv,h1)
+
+// console.log(newDiv)
