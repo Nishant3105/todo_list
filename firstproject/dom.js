@@ -1,3 +1,15 @@
+
+
+
+
+//------------------------------------------------------------------
+//html mei head par script file attach krne mei addeventlistener pe typeerror aata hai
+//body k neeche karna chahiye
+
+
+
+
+
 console.dir(document)
 console.log(document.URL)
 console.log(document.title)
@@ -145,3 +157,5 @@ var newDivText=document.createTextNode('Hello World');
 // container.insertBefore(newDiv,h1)
 
 // console.log(newDiv)
+
+//--------------------------------------------
