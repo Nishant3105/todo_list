@@ -172,3 +172,12 @@
 // }
 
 // printingInOrder()
+
+//why promises are used in javascript?
+// Promises are used to handle asynchronous operations in JavaScript. 
+// They are easy to manage when dealing with multiple asynchronous operations where callbacks can create callback hell leading to unmanageable code.
+
+// Why are async await better than promise.then design pattern?
+// The biggest pro of async/await is that it's generally easier to read, it almost feels like you're writing regular synchronous code. 
+// When you use promises, every function in the promise chain has its own scope. 
+// And that makes it tricky if you need to pass a variable from one method of the chain to another.
