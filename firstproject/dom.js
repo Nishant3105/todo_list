@@ -107,7 +107,7 @@ var itemList=document.querySelector('#items')
 //itemList.parentNode.style.backgroundColor='#f4f4f4'
 //console.log(itemList.parentNode.parentNode)
 
-//parentNode and parentElement for the most pats can be interchangable.
+//parentNode and parentElement for the most parts can be interchangable.
 
 //childNodes
 //console.log(itemList.childNodes)
