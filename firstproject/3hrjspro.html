@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerse Site</title>
+</head>
+<body>
+    <form>
+        <label>Price of the Product</label>
+        <input type="number" id="price"/>
+        <label>Name of item</label>
+        <input type="text" id="name"/>
+        <label>Type of Product</label>
+        <select id="category">
+            <option value="electronics">Electronics</option>
+            <option value="food">Food</option>
+            <option value="clothes">Clothes</option>
+        </select>
+        <button>Submit</button>
+    </form>
+    <div>
+        <h1>Electonics itemList </h1>
+        <ul id="el-item-list"></ul>
+        <h1>Food itemList </h1>
+        <ul id="food-item-list"></ul>
+        <h1>Clothes itemList </h1>
+        <ul id="clothes-item-list"></ul>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.3/axios.min.js"></script>
+    <script src="3hrsjspro.js"></script>
+</body>
+</html>
