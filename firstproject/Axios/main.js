@@ -40,7 +40,7 @@ function addTodo() {
         completed: false
     })
         .then(res => showOutput(res))
-        .catch(err => cobsole.log(err))
+        .catch(err => console.log(err))
 }
 
 // PUT/PATCH REQUEST
@@ -97,7 +97,7 @@ function customHeaders() {
                 title: 'New Todo',
                 completed: false
             },
-            config
+            configa
         )
         .then(res => showOutput(res))
         .catch(err => console.error(err))

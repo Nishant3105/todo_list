@@ -1,2 +1,2 @@
-console.log(count)
-    console.log(sum)
+
+// Maps are used to transform array - such as double, triple, 
